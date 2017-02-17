@@ -1,0 +1,201 @@
+doctype html5
+html(lang="es")
+	head
+		title Aqua Interactive
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="css/utilities.css")
+		link(rel="stylesheet", href="css/font-awesome.css")
+		link(rel="stylesheet", href="css/font-awesome.min.css")
+		link(rel="shortcut icon" href="favicon.ico") 
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/icon family=Material+Icons")
+	body
+		header.aazul-r
+			div.container-fluid
+					<!--MENU DESPLEGABLE-->
+					div.row
+						div.col-lg-12.col-sm-12.col-xs-12.azul-r
+							nav.navbar-fixed-top.fl-rg.fz-20(role="navigation")
+								div.navbar-header
+								button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle
+									span.glyphicon.glyphicon-menu-hamburger(aria-hidden="true")
+								div.collapse.navbar-collapse.navbar-ex1-collapse.dl-horizonta
+									ul.nav.navbar-pills.navbar-left.nav-stacked
+										li.swing
+											a(href="#somos").azul-r Somos
+										li.swing
+											a(href="#servicios").azul-r Servicios
+										li.swing
+											a(href="#sectores").azul-r Sectores
+										li.swing
+											a(href="#beneficios").azul-r Beneficios
+										li.swing
+											a(href="contacto.html", data-toggle="modal", data-target="#myModal").azul-r Contacto
+			div.conta
+		section#home
+			div.container-fluid
+				div.row.banner1
+					div.col-xs-12.col-sm-12.col-lg-12
+		section#somos
+			div.container
+				div.row
+					div.col-xs-12.col-sm-12.col-lg-12.pd-bt5
+						h3.aqua.mg-lf40 ¿Quiénes somos?
+						hr.bg-aqua.mg-lf40
+						p.azul-r.fz-20.mg-lf40.text1 Aquainteractive es una empresa con más de una década de experiencia en el desarrollo e implementación de proyectos tecnológicos a nivel global. A través de nuestra fábrica de software, originamos cambios y potenciamos el crecimiento en tu organización.
+				div.row.mg-lf40
+					div.col-xs-12.col-sm-4.col-lg-4.pd-bt20.text-center
+						div.circulo
+							img.img-cir.mg-lf20.mg-tp20.grow(src="img/mensaje.png")
+							h4.mg-tp45.mg-lf30.aqua.text1 Innovacion
+							p.mg-lf20.pd-0.text1 Aplicaciones novedosas con un uso real y exitoso
+					div.col-xs-12.col-sm-4.col-lg-4.pd-bt20
+						div.circulo
+							img.mg-lf20.mg-tp20.grow(src="img/engranes.png", alt="engranes")
+							h4.mg-tp30.mg-lf20.aqua Personalización
+							p.mg-lf20.pd-0 Cada proyecto se enfoca en las necesidades específicas de cada cliente.
+					div.col-xs-12.col-sm-4.col-lg-4.pd-bt20
+						div.circulo
+							img.mg-lf20.mg-tp20.grow(src="img/escribiendo.png", alt="escribiendo")
+							h4.mg-tp40.mg-lf30.aqua Flexibilidad
+							p.mg-lf20.pd-0 Cada solución tiene la capacidad de mutar y adaptarse a los retos de su contexto.
+		section#servicios.bg-aqua
+			div.container-fluid
+				div.row
+					div.col-xs-12.col-sm-12.col-lg-12
+						h3.white Nuestros Servicios
+						hr
+						div#myCarousel.carousel.slide(data-ride="carousel")
+							// Indicators
+							ol.carousel-indicators
+								li.active(data-target='#myCarousel', data-slide-to='0')
+								li(data-target='#myCarousel', data-slide-to='1')
+								li(data-target='#myCarousel', data-slide-to='2')
+							// Wrapper for slides
+							div.carousel-inner(role='listbox')
+								div.item.active
+									div.row
+										div.col-xs-6.col-sm-6.col-lg-6
+											h3.white Aplicaciones
+											p.white Creamos aplicaciones prácticas y llamativas para potenciar tu línea de negocios.
+										div.col-xs-6.col-sm-6.col-lg-6
+											img.img-carll(src="img/app1.jpg", alt='Chania')
+								div.item
+									div.row
+										div.col-xs-6.col-sm-6.col-lg-6
+											h3.white Aplicaciones
+											p.white Creamos aplicaciones prácticas y llamativas para potenciar tu línea de negocios.
+										div.col-xs-6.col-sm-6.col-lg-6
+											img.img-carll(src="img/app2.jpg", alt='Chania')
+								div.item
+									div.col-xs-6.col-sm-6.col-lg-6
+										h3.white Aplicaciones
+										p.white Creamos aplicaciones prácticas y llamativas para potenciar tu línea de negocios.
+									div.col-xs-6.col-sm-6.col-lg-6
+										img.img-carll(src="img/app3.jpg", alt='Chania')
+										// Left and right controls
+							a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+								span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+								span.sr-only Previous
+							a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+								span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+								span.sr-only Next
+		section#sectores
+			div.container
+				div.row
+					div.col-sm-12.col-xs-12.col-lg-12
+						h3.aqua.mg-lf30 Sectores
+						hr.bg-aqua.mg-lf30
+				div.row
+					div.hidden-sm.hidden-xs.col-lg-6
+						div.linea-horizontal.lineaho-pos
+						div.linea-vertical.lineave-pos
+					div.col-sm-3.col-xs-4.col-lg-3
+						div
+							img.ico-sec.shrink(src="img/gobierno.png", alt="gobierno")
+					div.col-sm-3.col-xs-8.col-lg-3
+						div.shrink
+						p.text-sectores1.mg-lf5.mg-tp10.azul-r Inicia tu transformación hacia un gobierno digital, moderno y apto para las exigencias del mundo actual.
+				div.row
+					div.hidden-sm.hidden-xs.col-lg-3
+						div.linea-horizontal.lineaho-pos1
+						div.linea-vertical.lineave-pos1
+					div.col-sm-3.col-xs-4.col-lg-3
+						div.shrink
+							img.ico-sec(src="img/iniciativa.png", alt="iniciativa")
+					div.col-sm-6.col-xs-8.col-lg-6
+						div.text-sectores2 
+							p.text-sectores1.mg-lf5.azul-r.mg-tp10 Impulsa procesos que te hagan competitivo y relevante en tu ramo comercial
+				div.row
+					div.col-sm-5.col-xs-4.col-lg-5
+						div
+							img.ico-sec(src="img/iniciativa.png", alt="iniciativa")
+					div.col-sm-7.col-xs-8.col-lg-7
+						div.text-sectores3
+							p.text-sectores1.mg-lf5.azul-r.mg-tp10.mg-rg30 Impulsa procesos que te hagan competitivo y relevante en tu ramo comercial
+		section#beneficios
+			div.container
+				div.row
+					div.col-xs-12.col-sm-12.col-lg-12
+						h3.aqua Beneficios
+						hr.bg-aqua
+					div.col-sm-3.col-xs-12.col-lg-3
+						div.circulo-punteado.mg-bt100
+							img.mg-lf30.mg-tp10(src="img/tabla.png", alt="Tabla")
+							h4.aqua.mg-tp40.mg-lf30 CALIDAD
+							p.aqua.text-center Provocamos procesos de calidad continua en todos los niveles de la organización.
+					div.col-sm-3.col-xs-12.col-lg-3
+						div.circulo-punteado.mg-bt100
+							img.mg-lf30.mg-tp10(src="img/tabla.png", alt="Tabla")
+							h4.aqua.mg-tp40.mg-lf30 ORDEN
+							p.aqua.text-center Provocamos procesos de calidad continua en todos los niveles de la organización.
+					div.col-sm-3.col-xs-12.col-lg-3
+						div.circulo-punteado.mg-bt100
+							img.mg-lf30.mg-tp20(src="img/tabla.png", alt="Tabla")
+							h4.aqua.mg-tp30.mg-lf20 ESTABILIDAD
+							p.aqua.text-center Provocamos procesos de calidad continua en todos los niveles de la organización.
+					div.col-sm-3.col-xs-12.col-lg-3
+						div.circulo-punteado.mg-bt100
+							img.mg-lf30.mg-tp20(src="img/tabla.png", alt="Tabla")
+							h4.aqua.mg-tp30.mg-lf20 EXCELENCIA
+							p.aqua.text-center Provocamos procesos de calidad continua en todos los niveles de la organización.
+		footer.bg-aqua
+			div.container
+				div.row
+					div.col-sm-9.col-xs-12.col-lg-9
+						h3.white ¿Cómo te ayudamos?
+					div.col-sm-3.col-xs-12.col-lg-3
+							span.btn-arriba.fa.fa-arrow-circle-o-up.fa-5x.ir-arriba(aria-hidden="true")
+				div.row
+					div.col-sm-12.col-xs-12.col-lg-12
+						form.form-inline
+							div.form-group
+								label(for="mail")
+								input(type="mail", placeholder="CORREO").form-control#email
+							div.form-group
+								label( for="phone")
+								input( type="phone", placeholder="TELÉFONO").form-control#phone
+						div.wrap
+							form(action="").formulario.fz-20.white
+								div.radio
+									input.help-block(type="radio", name="opcion")#cotizacion
+									label.help-block(for="cotizacion") Cotización
+									input.help-block(type="radio", name="opcion")#cliente
+									label.help-block(for="cliente") Cliente antiguo
+									input.help-block(type="radio", name="opcion")#asesoria
+									label.help-block(for="asesoria") Asesoría
+						form
+							div.form-group
+								label(for="comment")
+								textarea.form-control#comment(rows="5", placeholder="MENSAJE")
+							button.btn-warning Enviar
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		script(src="https://use.fontawesome.com/6013be0e09.js")
+		script(src="css/bootstrap.min.js")
+		script(src="js/jquery.js")
+		script(src="js/main.js")

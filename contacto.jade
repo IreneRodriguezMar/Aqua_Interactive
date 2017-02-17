@@ -1,0 +1,39 @@
+doctype html5
+html(lang="es")
+	head
+		title Aqua Interactive
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="css/utilities.css")
+		link(rel="stylesheet", href="css/font-awesome.css")
+		link(rel="stylesheet", href="css/font-awesome.min.css")
+		link(rel="shortcut icon" href="favicon.ico") 
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+	body
+		div.container
+			div.modal.fade#myModal(role="dialog")
+				div.modal-dialog
+					div.modal-content
+						div.modal-header
+							button(type="button", data-dismiss="modal").close
+							h4 Formulario
+						div.modal-body
+							form.form-horizontal
+								div.form-group
+									label.control-label.col-sm-2(for="email") Email:
+									div.col-sm-6
+										input(type="email", placeholder="Ingresa tu email").form-control#email
+								div.form-group
+									label.control-label.col-sm-2(for="pw") Contraseña:
+									div.col-sm-6
+										input(type="password", placeholder="Ingresa tu contraseña").form-control#password
+								div.form-group
+									div.col-sm-offset-2.col-sm-6
+										button(type="submit").btn.btn-default Enviar
+						div.modal-footer
+							button(type="button", data-dismiss="modal").btn.btn-default Close
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
